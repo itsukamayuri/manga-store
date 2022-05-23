@@ -1,0 +1,96 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Masster</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!--loader-->
+    <link href="~/css/Styleloader.css" rel="stylesheet" />
+    <script src="~/js/jquery-3.3.1.min.js"></script>
+    <script src="~/js/Scriptloader.js"></script>
+    <link href="~/css/StyleSheet.css" rel="stylesheet" />
+    <!-- custom css file link  -->
+
+
+</head>
+<body>
+    <!-- header section starts  -->
+
+
+    <section class="menu" id="menu">
+
+        <h1 class="heading"> Kinh Dị </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1405156429l/22711795.jpg" alt="Dantalian no Shoka, Vol. 01 by Chako Abeno" />
+                <h3>Dantalian no shoka</h3>
+                <h5>20.000 VND</h5>
+                <a class="btn" asp-area="" asp-controller="Home" asp-action="Revolution"> Đặt mua </a>
+            </div>
+
+            <div class="box">
+                <img src="https://images8.intercomics.club/vnstory/ff/95/ff958c86309633375f09444509177ac4.webp" alt="Mieru Ko-chan"/>
+                <h3>MieruKo-chan</h3>
+                <h5>20.000 VND</h5>
+                <a class="btn" asp-area="" asp-controller="Home" asp-action="Revolution"> Đặt mua </a>
+            </div>
+
+            <div class="box">
+                <img src="https://static1.mangayeh.com/manga/chapter/60191dffa566934fb06d13a7/6019737ea739175be90b8cda/togari_1_1.jpg" alt="Togari - Chapter 1" />
+                <h3>Togari</h3>
+                <h5>20.000 VND</h5>
+                <a class="btn" asp-area="" asp-controller="Home" asp-action="Revolution"> Đặt mua </a>
+            </div>
+
+            <div class="box">
+                <img src="https://image.mostraveller.com/uploads/images/comics/13502/thumbnail.png" alt="">
+                <h3>Cossette no Shouzou </h3>
+                <h5>20.000 VND</h5>
+                <a class="btn" asp-area="" asp-controller="Home" asp-action="Revolution"> Đặt mua </a>
+            </div>
+
+        </div>
+
+        <div class="menu-page">
+            <a class="btn" asp-area="" asp-controller="Home" asp-action="menu"> 1 </a>
+
+        </div>
+
+    </section>
+
+    <section class="footer">
+
+        <div class="share">
+            <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
+            <a href="https://twitter.com/" class="fab fa-twitter"></a>
+            <a href="https://www.instagram.com/accounts/login/#" class="fab fa-instagram"></a>
+            <a href="https://www.youtube.com/" class="fab fa-youtube"></a>
+        </div>
+        <div class="links">
+
+            <a asp-area="" asp-controller="Home" asp-action="index"> trang chủ </a>
+            <a asp-area="" asp-controller="Genre" asp-action="kinhdi"> kinh dị </a>
+            <a asp-area="" asp-controller="Genre" asp-action="trinhtham"> trinh thám </a>
+            <a asp-area="" asp-controller="Genre" asp-action="haihuoc"> hài hước </a>
+            <a asp-area="" asp-controller="Genre" asp-action="lichsu"> lịch sử  </a>
+
+        </div>
+    </section>
+
+
+
+</body>
+</html>
